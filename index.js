@@ -12,7 +12,7 @@ var con = null
 const app = express()
 const id = 1;
 
-var cpt = null
+var cpt = 1
 var resultToReturn = ""
 
 function setResultToDisplay(cptValue) {
