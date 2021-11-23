@@ -1,0 +1,21 @@
+version: "3.8"
+services: 
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 3000:3000
+    volumes: 
+      - .:/app
+      - '/app/node_modules'
+    depends_on: 
+      - mysql_server
+  
+  mysql_server:
+    image: mysql:8.0
+    environment: 
+      - MYSQL_DATABASE=tabi_db
+      - MYSQL_USER=thabisan
+      - MYSQL_PASSWORD=pswd
+      - MYSQL_ROOT_PASSWORD=pswd

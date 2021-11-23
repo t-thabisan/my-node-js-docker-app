@@ -1,0 +1,15 @@
+{
+	"name": "my_nodejs_docker_web_app",
+	"version": "1.0.0",
+	"author": "THAVANESAN Thabisan - EFREI M2 - LSI2",
+	"description": "dockerized web application using nodejs and a MySQL server",
+	"main": "index.js",
+	"scripts": {
+		"dev": "node index.js"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mysql2": "^2.2.5"
+	}
+}
